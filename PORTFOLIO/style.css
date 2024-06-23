@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: cadetblue;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:10;
+    display: flex;
+    padding: 1rem 9%;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(163, 130, 130);
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: blue;
+    margin-left: 4rem;
+    font-weight: bold;
+    transition: 1s;
+
+}
+.navbar a:hover{
+    color:black;
+}
+.home{
+    display:flex;
+    justify-content :center;
+    align-items:center;
+}
+.home-content{
+    font-size:2.2rem;
+    font-weight: 700;
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content p{
+    font-size: 1.6 rem;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 2rem;
+    margin:2rem 1.5rem 2rem 0;
+
+}
+.social-media a:hover{
+    color: aqua;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color:red;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 1.8rem;
+    color: black;
+    background-color: beige;
+    border-radius: 5rem;
+    font-weight: 50;
+    letter-spacing: 0.1rem;
+    transition:0.1 ease;
+}
+.btn:hover{
+    background-color: black;
+    color: antiquewhite;
+    box-shadow: 0 0 1rem black;
+}
+.home-img img{
+    width:10rem;
+    margin-left: ;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.About{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: aquamarine;
+}
+.About-img{
+    width:35rem;
+}
+.heading h2{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.About-content p{
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 2rem 0 3rem;
+}
+.services h2{
+    margin:0 0 5rem 0;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.service-box{
+    flex: 1 1 20rem;
+    background-color: aqua;
+    padding: 3rem 2rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.service-box:hover{
+    border-color: antiquewhite;
+    background-color: rgb(126, 98, 98);
+    transform:scaleX();
+}
+.service-box i{
+    font-size:6rem;
+    color: rgb(43, 21, 65);
+}
+.service-box h3{
+    font-size: 3.6rem;
+}
+.service-box p{
+    font-size: 0.9rem;
+    margin: 1rem 0 3rem;
+
+}
+.portfolio {
+    background-color:blue;
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:2.5rem;
+}
+.portfolio-box{
+    position: relative;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem black;
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img{
+    width:100%;
+    transition: 0.5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-layer{
+    color: bisque;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: linear-gradient(rgb(69, 66, 226),lime);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.portfolio-box:hover,.portfolio-layer{
+    transform:translateY(0);
+}
+.portfolio-layer h4{
+    font-size: 2rem;
+
+}
+.portfolio-layer p{
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
